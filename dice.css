@@ -97,4 +97,91 @@ p {
     font-weight: bold;
 }
 
+@media only screen and (max-width: 320px) {
+    /* Styles for phones */
+    body {
+      font-size: 14px;
+    }
+    .container {
+      padding: 10px;
+    }
+    .player{
+        padding: 0px;
+    }
+  }
 
+  @media only screen and (min-width: 321px) and (max-width: 768px) {
+    /* Styles for tablets */
+    body {
+      font-size: 16px;
+      width: 768px;
+      height: 457px;
+    }
+    .container {
+      padding: 20px;
+      margin: 5px;
+      max-width: 768px;
+      max-height: 457px;
+    }
+    .player{
+        padding: 0px;
+        margin: 10px;
+    }
+  }
+  
+  @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    /* Styles for laptops */
+    body {
+      font-size: 18px;
+      width: 1440px;
+      height: 500px;
+    }
+    .container {
+      padding: 30px;
+      margin: 5px;
+      max-width: 1440px;
+      max-height: 500px;
+    }
+    .player{
+        padding: 10px;
+        margin:0px 55px;
+
+    }
+  }
+  
+  @media only screen and (min-width: 1440px) and (max-width: 2560px) {
+    /* Styles for laptops */
+    body {
+      font-size: 18px;
+      width: 2560px;
+      height: 1002px;
+    }
+    .container {
+      padding: 100px 0px;
+      margin: 5px;
+      max-width: 2560px;
+      min-height: 1002px;
+    }
+    .player{
+        padding: 50px;
+        margin: 70px;
+        height: 200px;
+        
+    }
+    .player p{
+        margin:0 30px;
+        padding: 0px;
+        height: fit-content;
+        font-size: 50px;
+        max-height: 400px;
+    }
+    .name-input{
+        margin: 30px 0px;
+        padding:30px; 
+        font-size: 30px;
+    }
+    .h1{
+        font-size: 30px;
+    }
+  }
+  
