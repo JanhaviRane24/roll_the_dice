@@ -35,10 +35,12 @@ function rollDice(player) {
 
     if (player === 'player1') {
         document.getElementById('player1Dice').src = diceImage;
+        // player 1 name score message gets display
         let msg1=`${player1Name} score`;
         document.getElementById('player1msg').innerHTML=msg1;
     } else {
         document.getElementById('player2Dice').src = diceImage;
+         // player 1 name score message gets display
         let msg2=`${player2Name} score`;
         document.getElementById('player2msg').innerHTML=msg2;
     }
