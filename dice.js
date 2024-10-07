@@ -7,8 +7,8 @@ document.getElementById('startButton').addEventListener('click', function() {
     if (player1Name && player2Name) {
     
         // Show dice roll images (before rolling)
-        document.getElementById('player1Dice').src = '/images/roll.jpg';
-        document.getElementById('player2Dice').src = '/images/roll.jpg';
+        document.getElementById('player1Dice').src = './images/roll.jpg';
+        document.getElementById('player2Dice').src = './images/roll.jpg';
 
         // Display the game sections
         document.querySelector('.name-input').style.display = 'block';
@@ -31,7 +31,7 @@ document.getElementById('player2Div').addEventListener('click', function() {
 
 function rollDice(player) {
     const roll = Math.floor(Math.random() * 6) + 1; // Generate random number between 1 and 6
-    const diceImage = `/images/dice${roll}.png`; // Select dice result image (dice1.png to dice6.png)
+    const diceImage = `./images/dice${roll}.png`; // Select dice result image (dice1.png to dice6.png)
 
     if (player === 'player1') {
         document.getElementById('player1Dice').src = diceImage;
